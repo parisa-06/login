@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir-Bold.eot');
+    src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir.woff') format('woff'), url('../fonts/Vazir.woff') format('truetype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazir';
+}
+
+.background-image {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.byd-Middle-section {
+    width: 80%;
+    height: calc(100vh - 160px);
+    background-color: rgb(71, 255, 240);
+    box-shadow: 2px 2px 15px 5px #cecece;
+    margin: auto;
+}
+
+.Advertise {
+    width: 100%;
+    height: 100%;
+    background-color: violet;
+}
+
+@media only screen and (max-width:992px) {
+    .Advertise {
+        display: none;
+    }
+}
+
+.byd-part-form {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    font-family: 'Vazir';
+}
+
+.byd-box-form h4 {
+    font-size: 20px;
+    font-family: Vazir;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 10%;
+    font-family: 'Vazir';
+}
+
+#message-id {
+    background-color: turquoise;
+    font-size: 12px;
+    display: none;
+}
+
+.byd-user {
+    /* background-color: rgb(76, 0, 255); */
+    width: 90%;
+    height: 65px;
+    padding: 4%;
+    font-family: Vazir;
+    margin-top: 15%;
+}
+
+.byd-user-icon {
+    width: 15%;
+    height: 100%;
+    font-size: 23px;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.byd-user-icon i {
+    margin: auto 0;
+    color: rgb(190, 190, 190);
+}
+
+.byd-input-user {
+    width: 85%;
+    height: 100%;
+    /* background-color: rgb(205, 50, 128); */
+    float: left;
+}
+
+.byd-input-user label {
+    font-size: 12px;
+    color: rgb(185, 183, 183);
+    margin: 0;
+}
+
+.byd-input-user input {
+    width: 100%;
+    font-size: 13px;
+    /* background-color: yellowgreen; */
+    border: none;
+    outline: none;
+}
+
+.byd-password {
+    /* background-color: rgb(76, 0, 255); */
+    width: 90%;
+    height: 65px;
+    padding: 4%;
+    font-family: Vazir;
+    text-align: right;
+    margin-top: 2%;
+}
+
+.byd-password-icon {
+    width: 15%;
+    height: 100%;
+    font-size: 23px;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.byd-password-icon i {
+    margin: auto 0;
+    color: rgb(190, 190, 190);
+}
+
+.byd-input-pass {
+    width: 85%;
+    height: 100%;
+    /* background-color: rgb(205, 50, 128); */
+    float: left;
+}
+
+.byd-input-pass label {
+    font-size: 12px;
+    color: rgb(185, 183, 183);
+    margin: 0;
+}
+
+.byd-input-pass input {
+    width: 100%;
+    font-size: 13px;
+    /* background-color: yellowgreen; */
+    border: none;
+    outline: none;
+}
+
+.byd-fotget-pass {
+    margin-top: 7%;
+    color: rgb(185, 183, 183);
+    font-size: 13px;
+}
+
+#log,
+#submit {
+    margin-top: 3%;
+    width: 35%;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+#log {
+    background-image: linear-gradient(120deg, #778bfc 0%, #4964ff 100%);
+    color: white;
+    margin-left: 2%;
+}
+
+#submit {
+    background-color: #f0eeee;
+    color: rgb(185, 183, 183);
+}
+
+
+/*******/
+
+.Advertise {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bacground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
