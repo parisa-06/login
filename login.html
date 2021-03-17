@@ -21,24 +21,24 @@
                 <div class="container">
                     <div class=" row byd-Middle-section">
                         <div class=" col-12 col-lg-5  byd-part-form">
-                            <div>
-                                <!-- <h4> &nbsp خوش آمدید :)</h4> -->
-                            </div>
+                           
                             <div class="byd-box-form">
-
-                                <div id="message-id">
-                                    <p id="message-id-user"> <i class="icon-bell"></i> نام کاربری صحیح نیست.</p>
-                                    <p id="message-id-user"> رمز عبور صحیح نیست.</p>
+                                <div class="welcome">
+                                    <h4> &nbsp خوش آمدید :)</h4>
                                 </div>
-                                <form id="myform" action="">
+                                <div id="message-id">
+                                    <p id="message-id-user"> <i class="icon-bell"></i>اطلاعات وارد شده درست نمی باشد.</p>
+                                    
+                                </div>
+                                <form id="myform-id" action="">
                                     <div class="byd-user">
                                         <div class="byd-user-icon">
-                                            <i class="icon-user-outline"></i>
+                                            <i class="icon-user"></i>
                                         </div>
                                         <div class="byd-input-user">
                                             <div class="p-floating-container">
 
-                                                <input placeholder="نام کاربری" />
+                                                <input name="Uname" type="text" placeholder="نام کاربری" />
                                                 <label>نام کاربری</label>
 
                                             </div>
@@ -49,23 +49,24 @@
                                     <div class="byd-password">
 
                                         <div class="byd-password-icon">
-                                            <i class="icon-key-1"></i>
+                                            <i class="icon-keyboard"></i>
                                         </div>
                                         <div class="byd-input-pass">
                                             <div class="p-floating-container">
 
-                                                <input type="password" placeholder="رمزعبور" />
+                                                <input name="Password" type="password" placeholder="رمزعبور" />
                                                 <label> رمزعبور</label>
 
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="byd-fotget-pass">رمز عبورتان را فراموش کرده اید؟</p>
+                                    <div class="byd-form-down">
+                                   <p class="byd-fotget-pass">رمز عبورتان را فراموش کرده اید؟</p> 
 
                                     <input type="submit" name="log" id="log" value="ورود">
                                     <input type="submit" name="log" id="submit" value="ثبت نام"> <br>
 
-
+                                </div>
 
                                 </form>
                             </div>
