@@ -15,7 +15,7 @@
 .background-image {
     width: 100vw;
     height: 100vh;
-    background-color: #ececec;
+    background-color: #f5f5f5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,38 +41,55 @@
     }
 }
 
-.byd-box-form {
-    margin: auto;
-    border: 1px solid white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .byd-part-form {
     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255);
-    display: flex;
+    display: flex; 
+    /* background-color: #5f637c; */
     align-items: center;
     justify-content: center;
     text-align: right;
     font-family: 'Vazir';
+    flex-direction: column;
+}
+.byd-box-form {
+    margin: auto;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
-.byd-box-form h4 {
+.welcome  {
+
+    margin-bottom: 20px;
+    font-family: 'Vazir';
+
+}
+.welcome h4{
     font-size: 20px;
     font-family: Vazir;
     font-weight: bold;
-    text-align: right;
-    margin-bottom: 10%;
-    font-family: 'Vazir';
+    background: -webkit-linear-gradient( #3d55db, #b16af3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
 }
-
 #message-id {
-    /* background-color: turquoise; */
+    /* background-color: rgb(64, 224, 216); */
+    color: rgb(170, 168, 168);
     font-size: 12px;
-    display: none;
+    /* display: none; */
+}
+#message-id i{
+    
+        background: -webkit-gradient(linear, left top, left bottom, from(#3d55db), to(#c17eff));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
 }
 
 .byd-user,
@@ -80,34 +97,39 @@
     /* background-color: rgb(76, 0, 255); */
     width: 100%;
     /* height: 55px; */
-    padding: 2%;
+    padding: 4px;
     font-family: Vazir;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.byd-user {
+    margin-top: 25px;
+}
 .byd-password {
-    margin-top: 2%;
+    margin-top: 25px;
 }
 
-.byd-user {
-    margin-top: 15%;
-}
+
 
 .byd-user-icon,
 .byd-password-icon {
     width: 30px;
     height: 30px;
     font-size: 23px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     float: right;
 }
 
 .byd-user-icon i,
 .byd-password-icon {
     margin: auto 0;
+    font-size: 17px;
     color: rgb(190, 190, 190);
 }
 
@@ -123,16 +145,9 @@
 .byd-input-pass label {
     font-size: 12px;
     color: rgb(185, 183, 183);
-    /* margin-top: 6%; */
+     margin-top: -10px;
     width: 50%;
 }
-
-
-/* .byd-input-pass label {
-    font-size: 12px;
-    color: rgb(185, 183, 183);
-    margin: 0;
-} */
 
 .byd-input-user input,
 .byd-input-pass input {
@@ -146,66 +161,60 @@
     /* margin-top: 12%;
     margin-right: 4%; */
 }
-
-
-/* .byd-input-user input:focus,
-.byd-input-pass input:focus {
-    border-bottom: none;
-} */
-
-
-/* .byd-input-pass input {
-    width: 100%;
-    font-size: 13px;
-    background-color: yellowgreen;
-    border: none;
-    outline: none;
-} */
+.byd-input-user input:focus,
+.byd-input-pass input:focus{
+    border-bottom: 1px solid #4964ff ;
+    border-image: linear-gradient(to right, #253bbd, #fc77f5) 1;
+}
 
 .p-floating-container {
     position: relative;
 }
 
 .p-floating-container label {
-    /* Position the label */
-    left: 50%;
+   left: 50%;
     position: absolute;
     top: 0;
-    /* Hide it by default */
     opacity: 0;
     transition: 'all 200ms';
     border: none;
 }
-
-
-/* Show the label at desired position when the placeholder of input isn't shown */
 
 .p-floating-container input:not(:placeholder-shown)+label {
     background: #FFF;
     transform: translate(0, -50%);
     opacity: 1;
 }
+.byd-form-down{
+    width: 100%;
+    /* background-color: #4964ff; */
+    text-align: center;
+}
+
 
 .byd-fotget-pass {
-    margin-top: 7%;
-    color: rgb(185, 183, 183);
+   color: rgb(185, 183, 183);
     font-size: 13px;
+    margin: 18px auto;
+    
 }
 
 #log,
 #submit {
-    margin-top: 3%;
-    width: 35%;
+    margin-top: 5px;
+    width: 38%;
     height: 30px;
+    font-size: 13px;
     border: none;
     border-radius: 15px;
     outline: none;
+    
 }
 
 #log {
     background-image: linear-gradient(120deg, #778bfc 0%, #4964ff 100%);
     color: white;
-    margin-left: 2%;
+    margin-left: 5px;
 }
 
 #submit {
